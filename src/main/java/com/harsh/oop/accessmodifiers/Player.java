@@ -1,13 +1,25 @@
 package com.harsh.oop.accessmodifiers;
 
-public class accmod {
+public class Player {
     String name;
     private int guess;
     public String handle;
+
+    public int setGuess(int guess) {
+        if (guess >= 0) {
+            this.guess = guess;
+        }
+        return this.guess;
+    }
+
+    public int getGuess() {
+        return guess;
+    }
+
     private void assignItem(){
         // what this code/method does? write here ------------------
     }
-    public void setName(int teammId){
+    public void setName(int teamId){
         //        -------
     }
 }
